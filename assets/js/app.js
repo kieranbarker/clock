@@ -25,8 +25,7 @@
    * Update the time property in the data
    */
   var updateTime = function () {
-    var time = new Date().toLocaleString();
-    app.setData({ time });
+    app.data.time = new Date().toLocaleString();
   };
 
 
