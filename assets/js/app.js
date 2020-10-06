@@ -7,7 +7,7 @@
   //
 
   // Create the component
-  var app = new Reef("#app", {
+  const app = new Reef("#app", {
     data: {
       time: new Date().toLocaleString()
     },
@@ -24,10 +24,9 @@
   /**
    * Update the time property in the data
    */
-  var updateTime = function () {
-    var time = new Date().toLocaleString();
-    app.setData({ time });
-  };
+  function updateTime () {
+    app.data.time = new Date().toLocaleString();
+  }
 
 
   //
